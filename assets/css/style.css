@@ -1,0 +1,605 @@
+/* Navbar */
+
+.full-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-width .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.full-width .col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar {
+  background-color: #0C356A;
+  /* opacity: 1; */
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.navbar a {
+  color: white;
+  /* font-weight: bold; */
+  opacity: 1;
+}
+
+.menu {
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-toggler {
+  color: white;
+  background-color: #fff;
+  border: 2px solid #0C356A;
+}
+
+/* Landing Image */
+
+.home {
+  position: relative;
+}
+
+.cover {
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: 0%;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+/* text on landing image */
+
+#hero {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  /* border: 1px solid #f1f1f1; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 90%;
+  /* height: 100%; */
+  padding: 100px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  text-align: center;
+}
+
+#hero .typed {
+  color: #0C356A;
+}
+
+#hero h1 {
+  font-size: 48px;
+}
+
+#hero p {
+  font-size: 20px;
+}
+
+/* divider between two sections */
+
+/* .top-divider{
+  border-bottom: 20px solid #0C356A;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+} */
+
+.buttom-divider {
+  border-top: 10px solid #0C356A;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+}
+
+
+/* Back to top */
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0C356A;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #0C356A;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* About section */
+
+#profile {
+  padding-bottom: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  /* border-bottom: 2px solid rgba(0,0,0, 0.4) */
+}
+
+#profile .row {
+  /* padding: 2%; */
+  margin-top: 2%;
+  /* padding-left: 0%; */
+}
+
+#profile img {
+  width: 90%;
+}
+
+#profile table i,
+th,
+h3,
+h2 {
+  color: #0C356A;
+}
+
+#profile h5 {
+  font-size: 16px;
+}
+
+#profile .row .col-md-8 p>a:hover {
+  opacity: 1;
+}
+
+#profile td,
+#profile p {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #profile {
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+  #profile h3 {
+    padding-top: 2%;
+  }
+}
+
+
+/* skills section */
+
+#skills {
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+
+}
+
+#skills .row .col-md-4 {
+  padding: 2%;
+}
+
+#skills .row .col-md-4 .row .col-md-2 {
+  padding: 2%;
+}
+
+#skills h2 {
+  padding-bottom: 1%;
+}
+
+#skills i {
+  font-size: 28px;
+  color: #0C356A;
+}
+
+#skills h5 {
+  font-size: 18px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: #0C356A;
+}
+
+#skills p {
+  opacity: 0.6;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #skills .row .col-md-4 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/* Projects */
+
+#projects {
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#projects h2 {
+  text-align: center;
+  color: #0C356A;
+  padding-bottom: 1%;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #0C356A;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #0C356A;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  width: 100%;
+}
+
+#projects .project-contents {
+  background-color: #ddd;
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#projects h4 {
+  padding-bottom: 2%;
+  color: #0C356A;
+  text-align: center;
+}
+
+#projects #github .para {
+  text-align: right;
+}
+
+#projects #github a,
+#projects #live-projects a {
+  text-decoration: none;
+  color: #0C356A;
+}
+
+#projects #github a:hover,
+#projects #github a>i:hover,
+#projects #live-projects a:hover {
+  font-weight: bold;
+}
+
+#projects #live-projects img {
+  width: 100%;
+}
+
+#projects #live-projects .col-md-12 .row,
+#projects #github .col-md-12 .row {
+  /* box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.5); */
+  background-color: white;
+  padding: 2%;
+  margin-top: 1%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#projects #github .col-md-12 .row .col-md-2 {
+  font-size: 80px;
+  text-align: right;
+}
+
+#projects #live-projects .col-md-12 .row .col-md-10 h5 a,
+#projects #github .col-md-12 .row .col-md-10 h5 a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #0C356A;
+}
+
+#projects #live-projects .col-md-12 .row .col-md-10 .btn,
+#projects #github .col-md-12 .row .col-md-10 .btn {
+  border: 1px solid #0C356A;
+  color: #0C356A;
+}
+
+#projects #live-projects .col-md-12 .row .col-md-10 .btn:hover,
+#projects #github .col-md-12 .row .col-md-10 .btn:hover {
+  color: white;
+  background-color: #0C356A;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #projects {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .tab {
+    padding-bottom: 5%;
+  }
+
+  #projects .project-contents {
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #projects #live-projects .col-md-12 .row {
+    padding: 5%;
+    margin-bottom: 5%;
+    box-shadow: none;
+  }
+
+  #projects #github .col-md-12 .row{
+    box-shadow: none;
+  }
+
+  #projects #live-projects .col-md-12 .row img {
+    width: 80%;
+    margin-left: 10%;
+    padding: 2%;
+  }
+
+  #projects #github #repo-box .row {
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+
+  #projects #github #repo-box .row .bi-github {
+    margin-left: 30%;
+  }
+
+}
+
+/* Blog section */
+
+#blog {
+  /* background-color:#0C356A; */
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  /* background-color: #0C356A; */
+}
+
+#blog h2 {
+  text-align: center;
+  color: #0C356A;
+  padding-bottom: 1%;
+}
+
+/* #blog .card {
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.5);
+} */
+
+#blog .btn {
+  border: 1px solid #0C356A;
+  color: #0C356A;
+}
+
+#blog .btn:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #0C356A;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #blog {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+
+}
+
+/* Courses */
+
+#courses {
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#courses h2 {
+  text-align: center;
+  color: #0C356A;
+  padding-bottom: 1%;
+}
+
+#courses .row .col-md-4 .card {
+  /* width: 18rem; */
+  /* box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.5); */
+  padding: 2%;
+  /* background-color: #0C356A; */
+}
+
+#courses .row .col-md-4 .card a {
+  text-decoration: none;
+}
+
+#courses .row .col-md-4 .card .py {
+  width: 50%;
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#courses .row .col-md-4 .card .pd {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#courses .row .col-md-4 .card .ml {
+  width: 75%;
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#courses .btn {
+  border: 1px solid #0C356A;
+  color: #0C356A;
+}
+
+#courses .btn:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #0C356A;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #courses {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+  #courses .row .col-md-4 {
+    padding-bottom: 5%;
+  }
+
+  #courses .row .col-md-4 .card {
+    box-shadow: none;
+  }
+
+}
+
+/* Courses Pages */
+
+.courses {
+  padding-top: 8%;
+  padding-bottom: 5%;
+}
+
+.courses .card-title {
+  text-align: center;
+  color: #0C356A;
+  padding-bottom: 2%;
+}
+
+.courses h5 {
+  color: #0C356A;
+}
+
+.courses a {
+  color: #0C356A;
+  text-decoration: none;
+}
+
+.courses a:hover {
+  font-weight: bold;
+}
+
+.courses .card-img-top {
+  padding: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.python-course .card-img-top {
+  width: 25%;
+}
+
+.pandas-course .card-img-top {
+  width: 80%;
+}
+
+.machine-learning-course .card-img-top {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .courses {
+    padding-top: 20%;
+    padding-bottom: 5%;
+  }
+
+  .python-course .card-img-top {
+    width: 50%;
+  }
+
+  .pandas-course .card-img-top {
+    width: 100%;
+  }
+
+  .machine-learning-course .card-img-top {
+    width: 80%;
+  }
+
+}
+
+/* Footer */
+
+#footer {
+  color: white;
+  background-color: #0C356A;
+  text-align: center;
+  padding-top: 2%;
+}

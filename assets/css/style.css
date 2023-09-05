@@ -243,6 +243,34 @@ h2 {
   }
 }
 
+/* Certificates */
+
+#certificate {
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+}
+
+#certificate .head-cert{
+text-align: left;
+color: #0C356A;
+border-bottom: 1px solid #0C356A;
+}
+
+#certificate .cert{
+  padding: 2%;
+  border: 1px solid #0C356A;
+  border-radius: 5px;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+#certificate .cert a{
+  text-decoration: none;
+  color: #0C356A;
+  padding-top: 2%;
+}
+
 /* Projects */
 
 #projects {

@@ -255,15 +255,15 @@ h2 {
 #certificate .head-cert{
 text-align: left;
 color: #0C356A;
-border-bottom: 1px solid #0C356A;
+border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 #certificate .cert{
   padding: 2%;
-  border: 1px solid #0C356A;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin-right: 1%;
-  margin-top: 1%;
+  margin: 2%;
+  margin-top: 2%;
 }
 #certificate .cert a{
   text-decoration: none;
@@ -323,7 +323,7 @@ border-bottom: 1px solid #0C356A;
 }
 
 #projects .project-contents {
-  background-color: #ddd;
+  background-color: #F5F8FD;
   padding-left: 3%;
   padding-top: 2%;
   padding-bottom: 2%;

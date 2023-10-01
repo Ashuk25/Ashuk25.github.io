@@ -72,7 +72,7 @@ $(function () {
                 $("#logo").append(`<img src="${response.feed["image"]}" class="rounded-circle mx-auto" style="width:20%">`)
                 var display = '';
                 $.each(response.items, function (k, item) {
-                    display += `<div class="card mb-3 mx-auto mr-5 " style="width: 20rem; padding:2%;">`;
+                    display += `<div class="card mb-3 mx-auto mr-5 blog" style="width: 20rem; padding:2%;">`;
                     var src = item["thumbnail"]; // use thumbnail url
                     display += `<img src="${src}" class="card-img-top" alt="Cover image">`;
                     display += `<div class="card-body">`;
@@ -109,12 +109,12 @@ $(function () {
         showPage = function (page) {
             $(".card").hide();
             $(".card").each(function (n) {
-                if (n >= pageSize * (page - 1) && n < pageSize * page)
+                if (n < pageSize * page)
                     $(this).show();
             });
         }
 
-        showPage(1);
+        showPage(3);
 
         $("#pagin li").click(function () {
             $("#pagin li").removeClass("active");
